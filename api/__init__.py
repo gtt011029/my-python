@@ -6,3 +6,5 @@ Proprietary and confidential
 Author: tingting ge <tingting.ge@xyzrobotics.ai>, Date: 25/06/22
 """
 from .test import Test
+
+from .user import User

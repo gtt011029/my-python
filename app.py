@@ -15,7 +15,7 @@ from flask_restful import Api
 import json
 from utils import router_exception_checker
 
-from api import Test
+from api import Test, User
 
 app = Flask(__name__)
 app.debug = True
@@ -49,6 +49,7 @@ def test_disconnect():
 
 
 api.add_resource(Test, '/api/test')
+api.add_resource(User, '/api/user')
 
 # @app.route('/http/query/', methods=['post'])
 # def post_http():
